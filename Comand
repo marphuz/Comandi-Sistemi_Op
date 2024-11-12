@@ -1,0 +1,48 @@
+Tabella
+
+Comando	| Descrizione	                    |Esempio
+login	  |Autentica l’utente nel sistema.	|Username: pippo<br>Password: ********             
+logout	|Termina la sessione dell’utente.	|logout
+exit	  |Chiude la shell corrente.	      |exit o CTRL-D
+cat	    |Visualizza il contenuto di un file.|cat nomefile<br>cat file1 file2 > file3
+ls	    |Elenca i file e le directory.	  |ls<br>ls -la<br>ls /etc
+cd	    |Cambia la directory corrente.	  |cd /home/utente<br>cd ..
+pwd	    |Mostra la directory corrente.	  |pwd
+mkdir	  |Crea una nuova directory.	      |mkdir nuova_dir
+rmdir	  |Rimuove una directory vuota.	    |rmdir vuota_dir
+cp	    |Copia file o directory.	        |cp file1 file2<br>cp -r dir1 dir2
+mv	    |Sposta o rinomina file o directory.|mv vecchio_nome nuovo_nome<br>mv file1 dir/
+rm	    |Rimuove file o directory.	      |rm file<br>rm -r dir
+ln	    |Crea link (hard o simbolici) tra file|ln file1 link1<br>ln -s file1 link1
+chmod	  |Modifica i permessi di file o directory|chmod u+rwx,g+rx,o+rx file<br>chmod 0755 file
+chown	  |Cambia il proprietario di un file o directory|chown utente file 
+chgrp	  |Cambia il gruppo di un file o directory|chgrp gruppo file
+echo	  |Visualizza una stringa di testo |echo "Ciao Mondo"<br>echo $PATH
+read	  |Legge l’input da tastiera.	     |read var1 var2
+man	    |Mostra il manuale di un comando |man ls
+ps	    |Mostra i processi attivi.	     |ps<br>ps -aux
+kill	  |Termina un processo.	           |kill PID
+find	  |Cerca file e directory.	       |find / -name nomefile
+grep	  |Cerca stringhe all’interno dei file|grep "stringa" file<br>grep -r "stringa" dir
+sort	  |Ordina le linee di un file.	   |sort file<br>sort -r file
+head	  |Mostra le prime linee di un file|head file<br>head -n 10 file
+tail	  |Mostra le ultime linee di un file|tail file<br>tail -n 10 file
+wc	    |Conta righe, parole e caratteri di un file.|wc file<br>wc -l file
+more	  |Visualizza il contenuto di un file una pagina alla volta.|more file
+tee	    |Legge dallo standard input e scrive su standard output e file.	|`ls
+expr	  |Valuta espressioni.	          |expr 1 + 2<br>expr $a + 1
+trap	  |Gestisce segnali di sistema.	  |trap 'comando' 2<br>trap '' 2
+export	|Esporta variabili di ambiente.	|export VAR=value
+unset	  |Rimuove variabili di ambiente.	|unset VAR
+sh	    |Esegue script di shell.	      |sh script.sh
+bash	  |Esegue script di shell con la Bourne Again Shell.|bash script.sh
+sudo	  |Esegue comandi come superutente|sudo comando
+;	      |Separa comandi multipli sulla stessa linea|comando1; comando2
+&&	    |Esegue il secondo comando solo se il primo ha successo |	comando1 && comando2
+&	      |Esegue il comando in background |comando &
+`	`	    |Pipe, passa l’output del primo comando come input del secondo.
+>	      |Ridireziona l’output verso un file, sovrascrivendo il contenuto.	|comando > file
+>>	    |Ridireziona l’output verso un file, aggiungendo al contenuto esistente.|	comando >> file
+<	      |Ridireziona l’input da un file.|	comando < file
+2>	    |Ridireziona l’errore standard verso un file.|	comando 2> file
+2>&1	  |Combina l’output standard e l’errore standard.|	comando > file 2>&1
